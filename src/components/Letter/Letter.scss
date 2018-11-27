@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import './../../style/breakpoints';
+
+@keyframes move {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 35px;
+    }
+    100% {
+      top: 0px;
+  }
+}
+
+@keyframes moved {
+    0% {
+      top: 0px;
+    }
+    25%{
+      top : 40px;
+    }
+    50% {
+      top: 0px;
+    }
+
+    100% {
+      top: 40px;
+  }
+}
+
+$colors:"#112F41","#068587","#4FB99F","#F2B134","#ED553B";
+
+@for $i from 1 through length($colors) {
+    #Letter:nth-child(#{length($colors)}n+#{$i}) {
+        color: nth($colors, $i)
+    }
+}
+
+
+#Letter{
+  line-height: 110px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: -20px;
+/*  mix-blend-mode: color-burn; fix this on mobile*/
+  position: relative;
+  display: inline-block;
+  animation: move 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0.9;
+
+  @include breakpoint-xs{
+    letter-spacing: -10px;
+  }
+
+  @include breakpoint-sm{
+    letter-spacing: -10px;
+  }
+
+
+  &:hover {
+
+  animation: moved 1s ease-out;
+  animation-fill-mode: forwards;
+  }
+
+}

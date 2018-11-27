@@ -1,0 +1,29 @@
+@import './../../../style/breakpoints';
+
+h1.CTitle{
+  display: block;
+  text-align: center;
+  padding-top:12%;
+  font-size: 100px;
+
+  @include breakpoint-xs{
+    font-size: 70px;
+  }
+
+  @include breakpoint-sm{
+    font-size: 70px;
+  }
+}
+
+.contact_icons{
+  text-align: center;
+ a{
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+img{
+  height: 80px;
+  width: 80px;
+}
+}

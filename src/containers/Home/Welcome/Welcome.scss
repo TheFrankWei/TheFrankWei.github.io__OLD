@@ -1,0 +1,18 @@
+@import './../../../style/breakpoints';
+
+h1.WName{
+  margin-left: 40px;
+  display: block;
+  text-align: left;
+  padding-top: 10%;
+  font-size: 200px;
+  line-height: 70%;
+
+  @include breakpoint-xs{
+    font-size: 100px;
+  }
+
+  @include breakpoint-sm{
+    font-size: 150px;
+  }
+}

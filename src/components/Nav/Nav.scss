@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import './../../style/breakpoints';
+
+#Navbar {
+  overflow: hidden;
+  top:0;
+  right: 0;
+  position: fixed;
+  background-color: white;
+  opacity: .8;
+  width: 100vw;
+  z-index: 1;
+
+  li{
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    a {
+        font-family: 'Nunito', sans-serif;
+        display: block;
+        color: #3A3A32;
+        padding: 0px 15px;
+        padding-right: 25px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Mukta', sans-serif;
+
+        @include breakpoint-xs{
+          font-size: 15px;
+          padding: 0px 10px;
+
+        }
+
+        @include breakpoint-sm{
+          font-size: 15px;
+          padding: 0px 10px;
+
+        }
+        &:hover {
+            color: #FF8F00;
+            text-decoration: underline;
+        }
+    }
+
+  }
+}
+
+.toTopWrapper{
+  position:relative;
+
+}
+
+#toTop{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor: pointer;
+  width:20px;
+  height:20px;
+  padding: 10px;
+  opacity: .8;
+
+}

@@ -1,0 +1,48 @@
+@import './../../../style/breakpoints';
+
+.PTitle{
+  margin-left: 40px;
+  display:block;
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 5%;
+  font-size: 100px;
+  @include breakpoint-xs{
+    font-size: 70px;
+    padding-top: 5%;
+    padding-left: 0%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  @include breakpoint-sm{
+    font-size: 70px;
+    padding-top: 5%;
+    padding-left: 0%;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+.ContentGrid{
+   display: flex;
+   justify-content: space-around;
+   color: white;
+   flex-wrap:wrap;
+
+   .PortfolioItem{
+     background-color: #557282;
+
+
+     @include breakpoint-xs{
+       flex: 0 0 40%;
+     }
+
+     @include breakpoint-sm{
+       flex: 0 0 40%;
+     }
+
+     &:hover{
+       background-color: #5B7B8C;
+     }
+   }
+}
