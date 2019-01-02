@@ -7,11 +7,11 @@ h1.CTitle{
   font-size: 100px;
 
   @include breakpoint-xs{
-    font-size: 70px;
+    font-size: 65px;
   }
 
   @include breakpoint-sm{
-    font-size: 70px;
+    font-size: 65px;
   }
 }
 

@@ -8,7 +8,7 @@ h1.ATitle {
   padding-top:3%;
   font-size: 100px;
   @include breakpoint-xs{
-    font-size: 70px;
+    font-size: 65px;
     padding-top: 5%;
     padding-left: 0%;
     margin-left: 0px;
@@ -16,7 +16,7 @@ h1.ATitle {
   }
 
   @include breakpoint-sm{
-    font-size: 70px;
+    font-size: 65px;
     padding-top: 5%;
     padding-left: 0%;
     margin-left: 0px;
