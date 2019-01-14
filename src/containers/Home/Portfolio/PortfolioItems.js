@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import GitHub from './../../../images/github.svg';
 import Article from './../../../images/article.svg'
 import Wireframe from './../../../images/wireframe.svg';
+import Flickr from './../../../images/flickr.svg'
 
 export default [{
   name: 'typy',
@@ -91,7 +92,7 @@ export default [{
           Little Einstein
         </div>
         <div className='PortfolioItem__desc'>
-          UI/UX for a toy store 
+          UI/UX for a toy store
         </div>
         <div className='PortfolioItem__icon'>
           <i className="fab fa-js"></i>
@@ -117,7 +118,7 @@ export default [{
           <i className="fab fa-npm"></i>
         </div>
         <div className='PortfolioItem__links'>
-          <p>Check back later!</p>
+          <div><a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/144760780@N08/?"><img src={Flickr} alt='Flickr Link'/></a></div>
         </div>
       </div>
     )

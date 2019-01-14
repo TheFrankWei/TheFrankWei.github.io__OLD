@@ -23,7 +23,7 @@ const Contact = () =>{
       <div className = 'contact_icons'>
         <Icon href='https://github.com/TheFrankWei' target="_blank" rel="noopener" src={GitHub} alt="Github"/>
         <Icon href='https://www.linkedin.com/in/TheFrankWei/' target="_blank" rel="noopener" src={Linkedin} alt="Linkedin"/>
-        <Icon target="_blank" rel="noopener" src={Flickr} alt="Flickr -- Coming Soon!"/>
+        <Icon href='https://www.flickr.com/photos/144760780@N08/?' target="_blank" rel="noopener" src={Flickr} alt="Flickr"/>
       </div>
       </div>
     );
