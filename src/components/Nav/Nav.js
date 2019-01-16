@@ -6,11 +6,40 @@ import Icon from './../Icon/Icon.js'
 
 
 class Nav extends Component{
+  constructor(props) {
+   super(props);
+   this.handleScroll = this.handleScroll.bind(this);
+   this.state = {
+     showScroll: false
+   };
+
+ }
+
+  handleScroll() {
+    const boundingRect = ((document || {}).documentElement || {}).getBoundingClientRect;
+    if (boundingRect) {
+      if (document.documentElement.getBoundingClientRect().top * -1 > 100){
+        this.setState({ showScroll: true });
+      } else {
+        this.setState({ showScroll: false });
+      }
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
   render(){
     const scrollToTop= () => {
       window.scrollTo({top:0, behavior:'smooth'});
   };
+
+  const hideArrow = this.state.showScroll ? '' : 'hide';
   return(
     <div className = 'Nav' id = 'Nav'>
     <div id = "Navbar">
@@ -22,7 +51,8 @@ class Nav extends Component{
     </ul>
     </div>
 
-    <div className = 'toTopWrapper'>
+    <div className = {`toTopWrapper${hideArrow}`}>
+
     <Icon
       id = 'toTop'
       onClick={scrollToTop}
