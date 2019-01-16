@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b57d74bd6737231bc885",
-    "url": "/static/css/main.15a85801.chunk.css"
+    "revision": "819b53f21ca058773e23",
+    "url": "/static/css/main.3da5584f.chunk.css"
   },
   {
-    "revision": "b57d74bd6737231bc885",
-    "url": "/static/js/main.b57d74bd.chunk.js"
+    "revision": "819b53f21ca058773e23",
+    "url": "/static/js/main.819b53f2.chunk.js"
   },
   {
-    "revision": "481f3c0ddf98e82a926a",
-    "url": "/static/js/1.481f3c0d.chunk.js"
+    "revision": "6672f2817f44c178358c",
+    "url": "/static/js/1.6672f281.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/static/media/oneplaylist_mapping.14094c18.png"
   },
   {
-    "revision": "ebc868249988604b322454384c0b0726",
+    "revision": "e4007b4aa8d9ed6649dd36faf08dd772",
     "url": "/index.html"
   }
 ];
