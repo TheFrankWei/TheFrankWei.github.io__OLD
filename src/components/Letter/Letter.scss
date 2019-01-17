@@ -2,33 +2,46 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import './../../style/breakpoints';
 
-@keyframes move {
+// @keyframes move {
+//     0% {
+//       top: 0px;
+//     }
+//     50% {
+//       top: 35px;
+//     }
+//     100% {
+//       top: 0px;
+//   }
+// }
+//
+// @keyframes moved {
+//     0% {
+//       top: 0px;
+//     }
+//     25%{
+//       top : 40px;
+//     }
+//     50% {
+//       top: 0px;
+//     }
+//
+//     100% {
+//       top: 40px;
+//   }
+// }
+
+@keyframes myanimation {
     0% {
       top: 0px;
     }
     50% {
-      top: 35px;
+      top: 50px;
     }
     100% {
       top: 0px;
   }
 }
 
-@keyframes moved {
-    0% {
-      top: 0px;
-    }
-    25%{
-      top : 40px;
-    }
-    50% {
-      top: 0px;
-    }
-
-    100% {
-      top: 40px;
-  }
-}
 
 $colors:"#112F41","#068587","#4FB99F","#F2B134","#ED553B";
 
@@ -47,8 +60,8 @@ $colors:"#112F41","#068587","#4FB99F","#F2B134","#ED553B";
 /*  mix-blend-mode: color-burn; fix this on mobile*/
   position: relative;
   display: inline-block;
-  animation: move 1s ease-out;
-  animation-fill-mode: forwards;
+  // animation: move 1s ease-out;
+  // animation-fill-mode: forwards;
   opacity: 0.9;
 
   @include breakpoint-xs{
@@ -59,11 +72,14 @@ $colors:"#112F41","#068587","#4FB99F","#F2B134","#ED553B";
     letter-spacing: -10px;
   }
 
+  // &:hover {
+  //
+  // animation: moved 1s ease-out;
+  // animation-fill-mode: forwards;
+  // }
 
-  &:hover {
+}
 
-  animation: moved 1s ease-out;
-  animation-fill-mode: forwards;
-  }
-
+.letterhovered{
+   animation: myanimation 2s;
 }
